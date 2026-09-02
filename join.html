@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Voice & Vision Club and create original stories with other students.">
+    <title>Join Us | Voice &amp; Vision</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="Voice and Vision Club home">Voice <span>&amp;</span> Vision</a>
+            <div class="topbar-date" aria-label="Today's date">Today: <time id="currentDate"></time></div>
+            <button class="menu-toggle" type="button" aria-controls="navLinks" aria-expanded="false">
+                <span aria-hidden="true">☰</span>
+                <span class="sr-only">Open menu</span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="voice-acting.html">Voice Acting</a></li>
+                <li><a href="animation.html">Animation</a></li>
+                <li><a href="scriptwriting.html">Scriptwriting</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="join.html" class="join-button active-button" aria-current="page">Join Us</a></li>
+                <li><a href="donations.html">Donate</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="rules-and-guidelines.html">Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="simple-hero">
+            <p class="eyebrow">BECOME PART OF THE STORY</p>
+            <h1>Join <span>Voice &amp; Vision.</span></h1>
+            <p>Bring your imagination, your voice, and your ideas. No experience required.</p>
+        </section>
+
+        <section class="join-section">
+            <div class="join-info">
+                <p class="eyebrow">WHY JOIN?</p>
+                <h2>Create with other students.</h2>
+                <p>Voice &amp; Vision is a place to experiment, collaborate, and learn creative skills while working on projects you're actually excited about.</p>
+                <ul class="check-list">
+                    <li>No previous experience required</li>
+                    <li>Work with other creative students</li>
+                    <li>Learn voice acting</li>
+                    <li>Explore animation</li>
+                    <li>Write original stories</li>
+                    <li>Create club projects</li>
+                </ul>
+            </div>
+
+            <div class="form-card">
+                <h2>Interested?</h2>
+                <p>Fill out the form below to let us know you're interested in joining the club.</p>
+                <form id="joinForm" action="https://formspree.io/f/mdeoonep" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+
+                    <label for="grade">Grade</label>
+                    <select id="grade" name="grade" required>
+                        <option value="">Select your grade</option>
+                        <option>9th Grade</option>
+                        <option>10th Grade</option>
+                        <option>11th Grade</option>
+                        <option>12th Grade</option>
+                    </select>
+
+                    <label for="interest">I'm interested in...</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Choose an area</option>
+                        <option>Voice Acting</option>
+                        <option>Animation</option>
+                        <option>Scriptwriting</option>
+                        <option>All Three</option>
+                    </select>
+
+                    <label for="message">Why do you want to join?</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us a little about yourself..."></textarea>
+                    <input type="hidden" name="_subject" value="New Voice &amp; Vision Club Member">
+                    <button type="submit" class="button primary">Send Interest Form</button>
+                    <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">© 2026 Voice &amp; Vision Club. All rights reserved.</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

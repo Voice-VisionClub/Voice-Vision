@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Voice & Vision Club with questions, ideas, or support requests.">
+    <title>Contact Us | Voice &amp; Vision Club</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="Voice and Vision Club home">Voice <span>&amp;</span> Vision</a>
+            <div class="topbar-date" aria-label="Today's date">Today: <time id="currentDate"></time></div>
+            <button class="menu-toggle" type="button" aria-controls="navLinks" aria-expanded="false">
+                <span aria-hidden="true">☰</span>
+                <span class="sr-only">Open menu</span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="voice-acting.html">Voice Acting</a></li>
+                <li><a href="animation.html">Animation</a></li>
+                <li><a href="scriptwriting.html">Scriptwriting</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="join.html" class="join-button">Join Us</a></li>
+                <li><a href="donations.html">Donate</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="rules-and-guidelines.html">Rules</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="simple-hero contact-hero">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h1>Contact <span>the Club.</span></h1>
+            <p>Have a question, idea, or need help with a project? Send us a message.</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-info">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>We'd love to hear from you.</h2>
+                <p>Use the form to share your question or idea. Include your contact information so the club can reply.</p>
+                <div class="contact-detail">
+                    <span aria-hidden="true">✉️</span>
+                    <div><strong>Email</strong><p>Add the club email here</p></div>
+                </div>
+                <div class="contact-detail">
+                    <span aria-hidden="true">📞</span>
+                    <div><strong>Phone</strong><p>Add the club phone number here</p></div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <h2>Send a message</h2>
+                <form id="contactForm" action="https://formspree.io/f/mdeoonep" method="POST">
+                    <label for="contactName">Name</label>
+                    <input type="text" id="contactName" name="name" placeholder="Your name" autocomplete="name" required>
+
+                    <label for="contactEmail">Email Address</label>
+                    <input type="email" id="contactEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+
+                    <label for="contactPhone">Phone Number <span class="optional">(optional)</span></label>
+                    <input type="tel" id="contactPhone" name="phone" placeholder="(555) 555-5555" autocomplete="tel">
+
+                    <label for="contactTopic">What can we help with?</label>
+                    <select id="contactTopic" name="topic" required>
+                        <option value="">Choose a topic</option>
+                        <option>General question</option>
+                        <option>Club project</option>
+                        <option>Supplies or equipment</option>
+                        <option>Donation support</option>
+                        <option>Other</option>
+                    </select>
+
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" name="message" rows="6" placeholder="Write your message..." required></textarea>
+                    <input type="hidden" name="_subject" value="New Voice &amp; Vision Contact Message">
+                    <button type="submit" class="button primary">Send Message</button>
+                    <p id="contactMessageStatus" class="form-message" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">© 2026 Voice &amp; Vision Club. All rights reserved.</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the people, projects, and creative moments of Voice & Vision Club.">
+    <title>Gallery | Voice &amp; Vision Club</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="Voice and Vision Club home">Voice <span>&amp;</span> Vision</a>
+            <div class="topbar-date" aria-label="Today's date">Today: <time id="currentDate"></time></div>
+            <button class="menu-toggle" type="button" aria-controls="navLinks" aria-expanded="false">
+                <span aria-hidden="true">☰</span>
+                <span class="sr-only">Open menu</span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="voice-acting.html">Voice Acting</a></li>
+                <li><a href="animation.html">Animation</a></li>
+                <li><a href="scriptwriting.html">Scriptwriting</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="join.html" class="join-button">Join Us</a></li>
+                <li><a href="donations.html">Donate</a></li>
+                <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+                <li><a href="rules-and-guidelines.html">Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="simple-hero gallery-hero">
+            <p class="eyebrow">OUR CREATIVE MOMENTS</p>
+            <h1>Our <span>Gallery.</span></h1>
+            <p>Take a look at the people, projects, and moments that make Voice &amp; Vision Club special.</p>
+        </section>
+
+        <section class="gallery" aria-label="Voice and Vision Club photo gallery">
+            <article class="photo-card"><img src="club-photo1.jpg" alt="Voice & Vision Club members" data-fallback="🎙️"><div class="caption"><h2>Club Meeting</h2><p>Working together and sharing ideas.</p></div></article>
+            <article class="photo-card"><img src="club-photo2.jpg" alt="Students working on a project" data-fallback="💡"><div class="caption"><h2>Creative Projects</h2><p>Bringing our ideas to life.</p></div></article>
+            <article class="photo-card"><img src="club-photo3.jpg" alt="Voice acting activity" data-fallback="🎙️"><div class="caption"><h2>Voice Acting</h2><p>Finding our characters' voices.</p></div></article>
+            <article class="photo-card"><img src="club-photo4.jpg" alt="Animation project" data-fallback="🎬"><div class="caption"><h2>Animation</h2><p>Creating worlds one frame at a time.</p></div></article>
+            <article class="photo-card"><img src="club-photo5.jpg" alt="Script writing" data-fallback="✍️"><div class="caption"><h2>Scriptwriting</h2><p>Turning ideas into stories.</p></div></article>
+            <article class="photo-card"><img src="club-photo6.jpg" alt="Voice and Vision Club project" data-fallback="✨"><div class="caption"><h2>Our Projects</h2><p>Showcasing what we've created.</p></div></article>
+        </section>
+
+        <section class="instructions">
+            <h2>📷 Adding Your Photos</h2>
+            <p>Upload an image to your project and give it the same name used in the <code>src</code> section.</p>
+            <p>For example, upload <code>club-photo1.jpg</code> to the same folder as this HTML file.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">© 2026 Voice &amp; Vision Club. Creating Stories. Finding Voices. Inspiring Visions.</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

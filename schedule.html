@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the Voice & Vision Club meeting schedule.">
+    <title>Schedule | Voice &amp; Vision</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="Voice and Vision Club home">Voice <span>&amp;</span> Vision</a>
+            <div class="topbar-date" aria-label="Today's date">Today: <time id="currentDate"></time></div>
+            <button class="menu-toggle" type="button" aria-controls="navLinks" aria-expanded="false">
+                <span aria-hidden="true">☰</span>
+                <span class="sr-only">Open menu</span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="voice-acting.html">Voice Acting</a></li>
+                <li><a href="animation.html">Animation</a></li>
+                <li><a href="scriptwriting.html">Scriptwriting</a></li>
+                <li><a href="schedule.html" class="active" aria-current="page">Schedule</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="join.html" class="join-button">Join Us</a></li>
+                <li><a href="donations.html">Donate</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="rules-and-guidelines.html">Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="simple-hero">
+            <p class="eyebrow">WHEN WE MEET</p>
+            <h1>Club <span>Schedule</span></h1>
+            <p>Bring your ideas and creativity twice every week.</p>
+        </section>
+
+        <section class="schedule-section" aria-labelledby="meeting-schedule">
+            <h2 id="meeting-schedule" class="sr-only">Weekly meeting schedule</h2>
+            <div class="schedule-card">
+                <article class="day">
+                    <div class="day-number" aria-hidden="true">01</div>
+                    <div class="day-details">
+                        <h2>Tuesday</h2>
+                        <p>Creative Workshop</p>
+                    </div>
+                    <div class="time">2:45 PM <span>to</span> 3:45 PM</div>
+                </article>
+                <article class="day">
+                    <div class="day-number" aria-hidden="true">02</div>
+                    <div class="day-details">
+                        <h2>Thursday</h2>
+                        <p>Project &amp; Collaboration Day</p>
+                    </div>
+                    <div class="time">2:45 PM <span>to</span> 3:45 PM</div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="cards schedule-cards">
+                <article class="card">
+                    <div class="card-icon">🎙️</div>
+                    <h3>Tuesday</h3>
+                    <p>Practice voice acting, character performances, improvisation, and creative exercises.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🎬</div>
+                    <h3>Thursday</h3>
+                    <p>Work together on animation, scripts, scenes, and larger club projects.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="dark-section">
+            <h2>Have an idea for a project?</h2>
+            <a href="join.html" class="button primary">Join Voice &amp; Vision</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">© 2026 Voice &amp; Vision Club. All rights reserved.</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
